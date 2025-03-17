@@ -972,7 +972,6 @@ section,
 .about .content .btn-read-more {
   color: var(--contrast-color);
   background: #f14141;
-  line-height: 0;
   padding: 15px 40px;
   border-radius: 4px;
   transition: 0.5s;
@@ -994,6 +993,22 @@ section,
 
 .about .content .btn-read-more:hover i {
   transform: translateX(5px);
+}
+
+@media (min-width: 768)
+{
+  .about .content .btn-read-more span {
+    font-family: var(--default-font);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  .about .content .btn-read-more i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
 }
 
 /*--------------------------------------------------------------
